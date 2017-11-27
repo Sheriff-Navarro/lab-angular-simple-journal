@@ -4,6 +4,7 @@
         <hr>
         <h3> {{ entry.title }} </h3>
         <h4>{{ entry.date }}</h4>
+        <a [routerLink]="['journal-entries', entry._id]"> View Details </a>
 
         <!-- <a [routerLink]="['dish', dish._id]"> View Details </a> -->
 

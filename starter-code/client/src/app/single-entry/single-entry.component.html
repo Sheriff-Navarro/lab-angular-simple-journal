@@ -1,0 +1,13 @@
+<h1> Journal Entry details </h1>
+    <a [routerLink]="['']"> Back to list </a>
+
+    <div *ngIf="jrnlentry">
+
+
+      <div>
+        <h2> {{ jrnlentry.title }}&nbsp;</h2>
+        <h3> {{ jrnlentry.date }} </h3>
+        <h3> {{ jrnlentry.content }} </h3>
+
+      </div>
+    </div>

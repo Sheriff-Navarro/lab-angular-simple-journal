@@ -14,4 +14,14 @@ export class JrnlentryService {
     return this.http.get(`${this.BASE_URL}/api/journal-entries`)
     .map((res) => res.json());
   }
+
+  getEntry(id: Number): Object{
+    return this.entries.find(x => x['id'] === id);
+  }
+
+  get(id) {
+    return this.http.get(`${this.BASE_URL}/api/journal-entries/${id}`)
+    .map((res) => res.json());
+  }
+
 }

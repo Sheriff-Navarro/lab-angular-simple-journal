@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { EntryListComponent } from './entry-list/entry-list.component';
 import {JrnlentryService} from './jrnlentry.service';
 import {routes} from './app.routing';
+import { SingleEntryComponent } from './single-entry/single-entry.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntryListComponent
+    EntryListComponent,
+    SingleEntryComponent
   ],
   imports: [
     BrowserModule,
